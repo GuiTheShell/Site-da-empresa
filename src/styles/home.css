@@ -74,6 +74,33 @@
   }
 }
 
+@media screen and (max-width: 1650px) and (min-width: 769px) {
+  #home {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  #cta {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  #banner {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  #banner img {
+    display: none;
+  }
+}
+
 #cta {
   width: 100%;
   align-items: center;
@@ -141,11 +168,20 @@
   border-radius: 50%;
 }
 
+.card h4 {
+  min-height: 30px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  min-height: 80px;
+  font-size: 1rem;
+}
+
 .card video,
 .card img {
   width: 100%;
-  height: auto;
-  max-height: 620px;
+  aspect-ratio: 10 / 10;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
